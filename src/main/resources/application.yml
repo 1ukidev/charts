@@ -1,0 +1,27 @@
+micronaut:
+  application:
+    name: charts
+  server:
+    port: 8080
+  router:
+    static-resources:
+      css:
+        mapping: /css/*.css
+        paths: classpath:static/css
+      imgs:
+        mapping: /output/**
+        paths: file:output
+  views:
+    enabled: true
+    thymeleaf:
+      enabled: true
+  cache:
+    caffeine:
+      enabled: true
+      caches:
+        subreddit-cache:
+          charset: 'UTF-8'
+          expire-after-write: 5m
+        barchart-cache:
+          charset: 'UTF-8'
+          expire-after-write: 5m

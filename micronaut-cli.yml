@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.lukidev
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, cache-caffeine, graalvm, gradle, http-client, java, java-application, junit, logback, micronaut-aot, micronaut-build, micronaut-http-validation, netty-server, readme, serialization-jackson, shade, static-resources, views-fieldset, views-thymeleaf, yaml, yaml-build]
